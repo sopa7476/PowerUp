@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="imagex/png" href="aba.ico">
+    
+    <title>Power Up! | Delivery Dos Gamers</title>
+</head>
+<body>
+
+    <style>
+        body {
+          background-color: var(--bgInvent-cor);
+          color: black;
+        }
+    
+    
+        .mainHeader {
+          background-color: var(--mainHead-cor);
+        }
+    
+        #main {
+        width: 100%;
+        background-color: var(--mainHeaderCard-cor);
+    }
+
+    .bottomBar {
+        height: 60px;
+        width: 100%;
+        background-color: var(--fonte-cor);
+    }
+
+    .menu {
+    margin-top: 5vh;
+    }
+    
+        .menu {
+          margin-top: 12px;
+          margin-bottom: 12px;
+        }
+
+        
+      </style>
+    
+    
+      <header class="mainHeader">
+    
+        <div id="sideBAR1" class="sideBar">
+          <a href="#" class="btnFechar" onclick="fecharBar()">×</a>
+          <a href="index.html">★ Início ★</a>
+          <a href="card.html">★ Card do Herói ★</a>
+          <a href="invent.html">★ Inventário ★</a>
+          <button id="toggle-dark"></button>
+        </div>
+    
+    
+    
+      
+         
+        <div id="main">
+          <label for="menu" class="menu" onclick="abrirBar()">☰</label>
+        </div>
+      
+   <div class="bottomBar">
+    </div>
+         
+  </header>
+
+  <div>
+    <select id="forma-pagamento">
+      <option value="">FORMA DE PAGAMENTO</option>
+      <option value="pix">Pix</option>
+      <option value="credito">Cartão de crédito</option>
+      <option value="debito">Cartão de débito</option>
+      <option value="boleto">Boleto</option>
+      <option value="dinheiro">Dinheiro na entrega</option>
+    </select>
+    <button type="button" id="btn-trocar">TROCAR</button>
+  </div>
+  
+  <div>
+  <div><h1>VALOR FINAL:</h1></div>
+  <p>ITENS (<span id="qtd-resumo"></span>x): R$ <span id="valor-itens"></span></p>
+  <p>FRETE: R$ <span id="valor-frete"></span></p>
+  <h3>TOTAL: R$ <span id="valor-total"></span></h3>
+ </div>
+  
+  <button type="button" id="btn-pagar">REALIZAR PAGAMENTO</button>
+  
+
+  <div id="painel-pagamento" style="display:none;"></div>

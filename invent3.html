@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="imagex/png" href="aba.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Krona+One&display=swap" rel="stylesheet">
+    <title>Power Up! | Delivery Dos Gamers</title>
+</head>
+<body>
+
+    <style>
+        body {
+          background-color: var(--bgInvent-cor);
+          color: black;
+        }
+    
+    
+        .mainHeader {
+          background-color: var(--mainHead-cor);
+        }
+    
+        #main {
+        width: 100%;
+        background-color: var(--mainHeaderCard-cor);
+    }
+
+    .bottomBar {
+        height: 60px;
+        width: 100%;
+        background-color: var(--fonte-cor);
+    }
+
+    .menu {
+    margin-top: 5vh;
+    }
+    
+        .menu {
+          margin-top: 12px;
+          margin-bottom: 12px;
+        }
+
+        
+      </style>
+    
+    
+      <header class="mainHeader">
+    
+        <div id="sideBAR1" class="sideBar">
+          <a href="#" class="btnFechar" onclick="fecharBar()">×</a>
+          <a href="index.html">★ Início ★</a>
+          <a href="card.html">★ Card do Herói ★</a>
+          <a href="invent.html">★ Inventário ★</a>
+          <button id="toggle-dark"></button>
+        </div>
+    
+    
+    
+      
+         
+        <div id="main">
+          <label for="menu" class="menu" onclick="abrirBar()">☰</label>
+        </div>
+      
+   <div class="bottomBar">
+    </div>
+         
+  </header>
+
+
+<div class="display">
+  <div class="retCard2"><p>GAME OVER !</p></div>
+</div>
+
+<p>PREVISÃO DE ENTREGA:</p>
+<h1 id="previsao">--:-- - --:--</h1>
+
+<p>ACOMPANHAR ETAPAS:</p>
+<iframe id="mapa" width="100%" height="450" style="border:0;"
+        allowfullscreen loading="lazy"></iframe>
+
+<h1>OBRIGADA PELA PREFERÊNCIA! &lt;3</h1>
+
+<button type="button" id="btn-comprovante">BAIXAR COMPROVANTE</button>
+<p>PEDIDO ENTREGUE?</p>
+<button type="button" id="btn-sim">SIM</button>
+<button type="button" id="btn-nao">NÃO</button>
+<p id="msg-nao" style="display:none;">Tudo bem! Seu pedido ainda está a caminho 🚚</p>

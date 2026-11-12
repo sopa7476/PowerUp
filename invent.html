@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="imagex/png" href="aba.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Krona+One&display=swap" rel="stylesheet">
+    <title>Power Up! | Delivery Dos Gamers</title>
+</head>
+<body>
+
+    <style>
+        body {
+          background-color: var(--bgCard-cor);
+          color: var(--inFonte-cor);
+        }
+    
+    
+        .mainHeader {
+          background-color: var(--mainHead-cor);
+        }
+    
+        #main {
+        width: 100%;
+        background-color: var(--mainHeaderCard-cor);
+    }
+
+    .bottomBar {
+        height: 60px;
+        width: 100%;
+        background-color: var(--fonte-cor);
+    }
+
+    .menu {
+    margin-top: 5vh;
+    }
+    
+        .menu {
+          margin-top: 12px;
+          margin-bottom: 12px;
+        }
+
+        
+      </style>
+    
+    
+      <header class="mainHeader">
+    
+        <div id="sideBAR1" class="sideBar">
+          <a href="#" class="btnFechar" onclick="fecharBar()">×</a>
+          <a href="index.html">★ Início ★</a>
+          <a href="card.html">★ Card do Herói ★</a>
+          <a href="invent.html">★ Inventário ★</a>
+          <button id="toggle-dark"></button>
+        </div>
+    
+    
+    
+      
+         
+        <div id="main">
+          <label for="menu" class="menu" onclick="abrirBar()">☰</label>
+        </div>
+      
+   <div class="bottomBar">
+    </div>
+         
+  </header>
+
+
+<div class="displayIn">
+  <div class="retInv"><p>Pizza Promo</p></div>
+</div>
+<div class="pop">
+  <img src="images/promo.webp" alt="" data-produto-id="1">
+</div>
+
+<div class="promoT">
+  <h1>Pizza GG + CHIQUA TOY</h1>
+  <p>QUANTIDADE: <span id="quantidade">2</span></p>
+  <h2>PREÇO: R$ <span id="preco">79,99</span></h2>
+  
+  <div><button type="button" id="btn-mais">+</button>
+    <button type="button" id="btn-menos">-</button></div>
+</div>
+
+<div id="endereco2"><h1>ENDEREÇO DE ENTREGA:</h1></div>
+<input type="text" id="endereco" placeholder="Digite seu endereço completo">
+<button type="button" id="btn-continuar">CONTINUAR</button>
+
+
+<div class="checkerboard2">
+</div>
+
+
+    
+</body>
+</html>
